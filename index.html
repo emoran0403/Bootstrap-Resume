@@ -63,14 +63,14 @@
             </ol>
         </div>
 
-        <!--  My Experience - this is where i'm having some trouble. on my screen everything lines up and it looks nice.
-            but thats because they each have 2 lines of text within their card.
-            when i play with the sizing in the dev console, like 1000x841, the text wraps within the cards, but they are no longer the same size vertically.
-            when it gets to the breakpoint, it only puts one card per row, which is good.
-            this is my breakpoint - <div class="col-md-4 my-4">
+        <!--  My Experience - this is where i'm having some trouble:
+
+            'd-flex align-items-stretch' - this had to go in each div above the cards to make them stretch for the whole row.  this part was a pain
+
+            Question:    this is my breakpoint - <div class="col-md-4 my-4">
                 is that when the cards change to the 1 per row?
-            i'm not quite sure how to keep the same sizes vertically as the screen changes sizes between my screen and the breakpoint.
-            i've put 'align-items-stretch'
+
+            
         
         
         -->
@@ -82,11 +82,12 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">CSS Drills Lab</h5>
                             <p class="card-text">This lab coveres the basic CSS from the lectures</p>
+                            
                             <a href="https://github.com/emoran0403/CSS-Drills" target="_blank"
-                                class="btn btn-primary">Check out the
+                                class="btn btn-primary mx-auto mt-auto align-self-end">Check out the
                                 Repo on Github!</a>
                         </div>
                     </div>
@@ -95,12 +96,13 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Javascript Console Resume</h5>
                             <p class="card-text">This lab showcases the JS skills learned thus far as a
                                 resume.</p>
+                                
                             <a href="https://github.com/emoran0403/JS-Console-Resume" target="_blank"
-                                class="btn btn-primary">Check
+                                class="btn btn-primary mx-auto mt-auto align-self-end">Check
                                 out the Repo on Github!</a>
                         </div>
                     </div>
@@ -109,12 +111,13 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Flexbox Fun</h5>
                             <p class="card-text">This was a personal project where I played around with
                                 flexboxes.</p>
+                                
                             <a href="https://github.com/emoran0403/Flexbox-Fun" target="_blank"
-                                class="btn btn-primary">Check out the
+                                class="btn btn-primary mx-auto mt-auto align-self-end">Check out the
                                 Repo on Github!</a>
                         </div>
                     </div>
@@ -124,12 +127,13 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Tic Tac Toe</h5>
                             <p class="card-text">This lab invloved custom CSS and a JS file to play Tic Tac
                                 Toe</p>
+                                
                             <a href="https://github.com/emoran0403/Tic-Tac-Toe-Lab" target="_blank"
-                                class="btn btn-primary">Check out
+                                class="btn btn-primary mx-auto mt-auto align-self-end">Check out
                                 the Repo on Github!</a>
                         </div>
                     </div>
@@ -138,12 +142,13 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Bootstrap Resume</h5>
                             <p class="card-text">This lab invloved reproducing a PDF of a site created with
                                 Bootstrap.</p>
+                                
                             <a href="https://github.com/emoran0403/Bootstrap-Resume" target="_blank"
-                                class="btn btn-primary">Check out
+                                class="btn btn-primary mx-auto mt-auto align-self-end">Check out
                                 the Repo on Github!</a>
                         </div>
                     </div>
@@ -152,11 +157,12 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">99 Lines Lab</h5>
                             <p class="card-text">This lab explores loops within loops within loops.</p>
+                            
                             <a href="https://github.com/emoran0403/99-Lines-Lab" target="_blank"
-                                class="btn btn-primary">Check out the
+                                class="btn btn-primary mx-auto mt-auto align-self-end">Check out the
                                 Repo on Github!</a>
                         </div>
                     </div>
@@ -166,12 +172,13 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Bootstrap 4 Drills</h5>
                             <p class="card-text">This lab involved basic Bootstrap classes such as forms and
                                 cards.</p>
+                                
                             <a href="https://github.com/emoran0403/Bootstrap-4-Drills" target="_blank"
-                                class="btn btn-primary">Check
+                                class="btn btn-primary mx-auto mt-auto align-self-end">Check
                                 out the Repo on Github!</a>
                         </div>
                     </div>
@@ -180,12 +187,13 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">JS Kitchen Sink</h5>
                             <p class="card-text">This lab is a showcase of all the things learned in JS thus
                                 far</p>
+                                
                             <a href="https://github.com/emoran0403/JS-Kitchen-Sink" target="_blank"
-                                class="btn btn-primary">Check out
+                                class="btn btn-primary mx-auto mt-auto align-self-end">Check out
                                 the Repo on Github!</a>
                         </div>
                     </div>
@@ -194,12 +202,13 @@
                 <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">HTML Lab Drills</h5>
                             <p class="card-text">I created a basic site with lists, images, links, and an
                                 embedded video</p>
+                                
                             <a href="https://github.com/emoran0403/HTML-Lab-Drills" target="_blank"
-                                class="btn btn-primary">Check out
+                                class="btn btn-primary mt-auto mx-auto align-self-end">Check out
                                 the Repo on Github!</a>
                         </div>
                     </div>
