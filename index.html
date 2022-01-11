@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <div class="container my-5">
+    <div class="container my-5 ">
 
-        <!-- start jumbotron-->
+        <!-- top jumbotron-->
 
         <div class="row p-5 bg-primary text-white border rounded">
             <div class="py-5">
@@ -26,7 +26,7 @@
 
         <!-- alert saying "This resume was created using Bootstrap 4" -->
         <div class="alert alert-success my-5" role="alert">
-            This resume was created using Bootstrap 4
+            This resume was created using Bootstrap 4 (but really it was with 5)
         </div>
 
 
@@ -63,95 +63,153 @@
 
         <!--  My Experience > grid system with 3x3 cards including pic, title, body, link -->
 
-        <div class="my-5">
+        <div class="container my-5">
             <h1>My Experience:</h1>
-            <div class="row">
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">CSS Drills Lab</h5>
-                        <p class="card-text">This lab coveres the basic CSS from the lectures</p>
-                        <a href="https://github.com/emoran0403/CSS-Drills" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Flexbox Fun</h5>
-                        <p class="card-text">This was a personal project where I played around with a lot (too many) CSS flexboxes to get a feel for how they work</p>
-                        <a href="https://github.com/emoran0403/Flexbox-Fun" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Javascript Console Resume</h5>
-                        <p class="card-text">This lab showcases the JS skills learned thus far as a resume.</p>
-                        <a href="https://github.com/emoran0403/JS-Console-Resume" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Tic Tac Toe</h5>
-                        <p class="card-text">This lab invloved custom CSS and a JS file to play Tic Tac Toe</p>
-                        <a href="https://github.com/emoran0403/Tic-Tac-Toe-Lab" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Resume</h5>
-                        <p class="card-text">This lab invloved reproducing a PDF of a site created with Bootstrap.  it is also the lab that led to this site.</p>
-                        <a href="https://github.com/emoran0403/Bootstrap-Resume" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">99 Lines Lab</h5>
-                        <p class="card-text">This lab explores nested for loops.</p>
-                        <a href="https://github.com/emoran0403/99-Lines-Lab" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap 4 Drills</h5>
-                        <p class="card-text">This lab involved basic Bootstrap classes such as forms and cards.</p>
-                        <a href="https://github.com/emoran0403/Bootstrap-4-Drills" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">JS Kitchen Sink</h5>
-                        <p class="card-text">This lab is a showcase of all the things learned in JS thus far</p>
-                        <a href="https://github.com/emoran0403/JS-Kitchen-Sink" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-                <div class="card col-4">
-                    <img src="image.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML Lab Drills</h5>
-                        <p class="card-text">This lab consisted of creating a basic site with lists, images, links and an embedded video</p>
-                        <a href="https://github.com/emoran0403/HTML-Lab-Drills" target="_blank" class="btn btn-primary">Check out the Repo on Github!</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="row d-flex">
 
-        <!-- end jumbotron: include  h3 contact info center aligned -->
-        <div class="row p-5 bg-secondary border rounded">
-            <div class="py-5">
-                <h3>Eric Moran</h3>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-secondary">Phone: (Some) - Numbers - Here</li>
-                    <li class="list-group-item bg-secondary">Email: Sample@email.com</li>
-                    <li class="list-group-item bg-secondary">Address Line 1, City, State, Zip</li>
-                </ul>
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS Drills Lab</h5>
+                            <p class="card-text">This lab coveres the basic CSS from the lectures</p>
+                            <a href="https://github.com/emoran0403/CSS-Drills" target="_blank"
+                                class="btn btn-primary">Check out the
+                                Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript Console Resume</h5>
+                            <p class="card-text">This lab showcases the JS skills learned thus far as a
+                                resume.</p>
+                            <a href="https://github.com/emoran0403/JS-Console-Resume" target="_blank"
+                                class="btn btn-primary">Check
+                                out the Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Flexbox Fun</h5>
+                            <p class="card-text">This was a personal project where I played around with
+                                flexboxes.</p>
+                            <a href="https://github.com/emoran0403/Flexbox-Fun" target="_blank"
+                                class="btn btn-primary">Check out the
+                                Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tic Tac Toe</h5>
+                            <p class="card-text">This lab invloved custom CSS and a JS file to play Tic Tac
+                                Toe</p>
+                            <a href="https://github.com/emoran0403/Tic-Tac-Toe-Lab" target="_blank"
+                                class="btn btn-primary">Check out
+                                the Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap Resume</h5>
+                            <p class="card-text">This lab invloved reproducing a PDF of a site created with
+                                Bootstrap.
+                                it is
+                                also the lab that led to this site.</p>
+                            <a href="https://github.com/emoran0403/Bootstrap-Resume" target="_blank"
+                                class="btn btn-primary">Check out
+                                the Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">99 Lines Lab</h5>
+                            <p class="card-text">This lab explores nested for loops.</p>
+                            <a href="https://github.com/emoran0403/99-Lines-Lab" target="_blank"
+                                class="btn btn-primary">Check out the
+                                Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap 4 Drills</h5>
+                            <p class="card-text">This lab involved basic Bootstrap classes such as forms and
+                                cards.</p>
+                            <a href="https://github.com/emoran0403/Bootstrap-4-Drills" target="_blank"
+                                class="btn btn-primary">Check
+                                out the Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">JS Kitchen Sink</h5>
+                            <p class="card-text">This lab is a showcase of all the things learned in JS thus
+                                far</p>
+                            <a href="https://github.com/emoran0403/JS-Kitchen-Sink" target="_blank"
+                                class="btn btn-primary">Check out
+                                the Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML Lab Drills</h5>
+                            <p class="card-text">I created a basic site with lists, images, links, and an
+                                embedded video</p>
+                            <a href="https://github.com/emoran0403/HTML-Lab-Drills" target="_blank"
+                                class="btn btn-primary">Check out
+                                the Repo on Github!</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    </div>
+
+    <!-- bottom jumbotron -->
+    <div class="row p-5 bg-secondary border rounded justify-content-center">
+        <div class="py-5 ">
+            <h3 class="text-center">Eric Moran</h3>
+            <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item bg-secondary ">Phone: (Some) - Numbers - Here</li>
+                <li class="list-group-item bg-secondary">Email: Sample@email.com</li>
+                <li class="list-group-item bg-secondary">Address Line 1, City, State, Zip</li>
+            </ul>
+        </div>
+    </div>
     </div>
 </body>
 
