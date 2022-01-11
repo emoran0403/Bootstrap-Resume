@@ -13,7 +13,7 @@
 <body>
     <div class="container my-5 ">
 
-        <!-- top jumbotron-->
+        <!-- top jumbotron - getting this to work wasn't that bad -->
 
         <div class="row p-5 bg-primary text-white border rounded">
             <div class="py-5">
@@ -24,13 +24,15 @@
 
 
 
-        <!-- alert saying "This resume was created using Bootstrap 4" -->
+        <!-- alert - this was easy -->
+
         <div class="alert alert-success my-5" role="alert">
             This resume was created using Bootstrap 4 (but really it was with 5)
         </div>
 
 
-        <!--  My Skills > list group with badges -->
+        <!--  My Skills - this was a quick copy/paste/edit from the bootstrap docs -->
+
         <div class="my-5">
             <h1>My Skills:</h1>
             <ol class="list-group list-group-numbered">
@@ -61,13 +63,23 @@
             </ol>
         </div>
 
-        <!--  My Experience > grid system with 3x3 cards including pic, title, body, link -->
+        <!--  My Experience - this is where i'm having some trouble. on my screen everything lines up and it looks nice.
+            but thats because they each have 2 lines of text within their card.
+            when i play with the sizing in the dev console, like 1000x841, the text wraps within the cards, but they are no longer the same size vertically.
+            when it gets to the breakpoint, it only puts one card per row, which is good.
+            this is my breakpoint - <div class="col-md-4 my-4">
+                is that when the cards change to the 1 per row?
+            i'm not quite sure how to keep the same sizes vertically as the screen changes sizes between my screen and the breakpoint.
+            i've put 'align-items-stretch'
+        
+        
+        -->
 
         <div class="container my-5">
             <h1>My Experience:</h1>
             <div class="row d-flex">
 
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
@@ -80,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
@@ -94,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
@@ -109,7 +121,7 @@
                 </div>
             </div>
             <div class="row d-flex">
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
@@ -123,15 +135,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Bootstrap Resume</h5>
                             <p class="card-text">This lab invloved reproducing a PDF of a site created with
-                                Bootstrap.
-                                it is
-                                also the lab that led to this site.</p>
+                                Bootstrap.</p>
                             <a href="https://github.com/emoran0403/Bootstrap-Resume" target="_blank"
                                 class="btn btn-primary">Check out
                                 the Repo on Github!</a>
@@ -139,12 +149,12 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">99 Lines Lab</h5>
-                            <p class="card-text">This lab explores nested for loops.</p>
+                            <p class="card-text">This lab explores loops within loops within loops.</p>
                             <a href="https://github.com/emoran0403/99-Lines-Lab" target="_blank"
                                 class="btn btn-primary">Check out the
                                 Repo on Github!</a>
@@ -153,7 +163,7 @@
                 </div>
             </div>
             <div class="row d-flex">
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
@@ -167,7 +177,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
@@ -181,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 my-4">
+                <div class="col-md-4 my-4 d-flex align-items-stretch">
                     <div class="card">
                         <img src="image.png" class="card-img-top">
                         <div class="card-body">
